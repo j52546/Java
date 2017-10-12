@@ -3,13 +3,12 @@ package br.edu.univas.si4.tp4.lojaonline.model;
 public class Product {
 	
 	private String name;
-	private int quatity;
+	private int quantity;
 	
 	
-	public Product(String name, int quatity) {
-		super();
+	public Product(String name, int quantity) {
 		this.name = name;
-		this.quatity = quatity;
+		this.quantity = quantity;
 	}
 	private String getName() {
 		return name;
@@ -17,13 +16,16 @@ public class Product {
 	private void setName(String name) {
 		this.name = name;
 	}
-	private int getQuatity() {
-		return quatity;
+	private int getQuantity() {
+		return quantity;
 	}
-	private void setQuatity(int quatity) {
-		this.quatity = quatity;
+	private void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", quantity=" + quantity + "]";
 
-}
+	}
+}	

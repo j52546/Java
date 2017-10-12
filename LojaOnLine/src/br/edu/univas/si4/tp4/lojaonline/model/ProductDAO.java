@@ -5,17 +5,12 @@ import java.util.ArrayList;
 public class ProductDAO {
 	
 	public ArrayList<Product> listByName(String name){
-	
 		ArrayList<Product> result = new ArrayList<>();
-		
 		result.add(new Product("Arroz", 10));
-		result.add(new Product("Feijao", 20));
+		result.add(new Product("Feijăo", 20));
 		result.add(new Product("Farinha", 15));
-		result.add(new Product("Macarr�o", 25));
-		
-		
+		result.add(new Product("Macarrăo", 5));
 		return result;
-		
 	}
 
 }
